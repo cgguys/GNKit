@@ -5,4 +5,5 @@ target 'GNKitDemo' do
  	pod 'QMUIKit', '~> 4.2.3'
 	pod 'SDWebImage', '~> 5.11.0'
 	pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'LookinServer', :configurations => ['Debug']
 end

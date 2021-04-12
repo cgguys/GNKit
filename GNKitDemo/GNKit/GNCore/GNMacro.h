@@ -12,8 +12,11 @@
 //弱引用
 //#define @weakify __weak typeof(self) weakSelf = self;
 
-#define GN_IsString(string) [string isKindOfClass:[NSString class]]
+#define GNIsString(string) [string isKindOfClass:[NSString class]]
 
+#define GNLog(s)  QMUILog(nil,s)
+#define GNLogInfo(s) QMUILogInfo(nil,s)
+#define GNLogWarn(s) QMUILogWarn(nil,s)
 
 #pragma mark - 完整的ARC单例宏
 // .h文件

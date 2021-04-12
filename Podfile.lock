@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - LookinServer (1.0.0)
   - MBProgressHUD (1.2.0)
   - QMUIKit (4.2.3):
     - QMUIKit/QMUIComponents (= 4.2.3)
@@ -341,6 +342,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
+  - LookinServer
   - MBProgressHUD (~> 1.2.0)
   - QMUIKit (~> 4.2.3)
   - SDWebImage (~> 5.11.0)
@@ -348,16 +350,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - LookinServer
     - MBProgressHUD
     - QMUIKit
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   QMUIKit: c047f987b14be9f48df47cb934a2d21ccd7ef4b6
   SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
 
-PODFILE CHECKSUM: 8a31221ccfb6814f2c59b569d11d3c73446874c6
+PODFILE CHECKSUM: 6a637e18a7b75280233867fdcac11d68c1933aba
 
 COCOAPODS: 1.10.1

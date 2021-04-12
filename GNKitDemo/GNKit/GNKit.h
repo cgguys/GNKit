@@ -8,8 +8,7 @@
 
 #ifndef GNKit_h
 #define GNKit_h
-#import "GNMacro.h"
+#import "GNCore.h"
 #import "GNHudTool.h"
 
-#import "NSTimer+WeakTimer.h"
 #endif /* GNKit_h */

@@ -1,0 +1,20 @@
+//
+//  GNKitDemoPrefixHeader.pch
+//  GNKitDemo
+//
+//  Created by trueway on 2021/4/8.
+//  Copyright © 2021 gunan. All rights reserved.
+//
+
+#ifndef GNKitDemoPrefixHeader_pch
+#define GNKitDemoPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <QMUIKit.h>
+#import <SDWebImage.h>
+#import <MBProgressHUD.h>
+#import "GNKit.h"
+
+
+#endif /* GNKitDemoPrefixHeader_pch */

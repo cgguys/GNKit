@@ -17,17 +17,20 @@
 
 GNSingletonM(GNHudTool,shareInstance)
 
+//业务层可独立出来
 + (void)showXWGifHudInWindows {
     GNHudTool *tool = [GNHudTool shareInstance];
     [tool showGifProcessHudViewWithGifName:@"gifLoading" withContentSize:CGSizeMake(100,100) inView:nil animated:YES];
 }
+
+
 
 + (void)hideHudInWindows {
     GNHudTool *tool = [GNHudTool shareInstance];
     [tool hideHudAnimated:YES];
 }
 
-- (void)showGifProcessHudViewWithGifName:( NSString *)gifName withContentSize:(CGSize)size inView:(nullable UIView *)view animated:(BOOL)animated{
+- (void)showGifProcessHudViewWithGifName:( NSString *)gifName withContentSize:(CGSize)size inView:(nullable UIView *)view animated:(BOOL)animated {
     if (view == nil) view = (UIView*)[UIApplication sharedApplication].delegate.window;
     if (self.hud) return;
     self.hud = [MBProgressHUD showHUDAddedTo:view animated:animated];
@@ -43,8 +46,10 @@ GNSingletonM(GNHudTool,shareInstance)
     self.hud = nil;
 }
 
-- (UIView *)_configGifViewWithGif:(NSString *)gifName withContentSize:(CGSize)size{
-    UIImage *image = [UIImage sd_animatedGIFNamed:gifName];
+- (UIView *)_configGifViewWithGif:(NSString *)gifName withContentSize:(CGSize)size {
+    NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[gifName stringByAppendingString:@"@2x"] ofType:@"gif"];
+    NSData *data = [NSData dataWithContentsOfFile:retinaPath];
+    UIImage *image = [UIImage sd_imageWithGIFData:data];
     GNGifImageView *gifImageView = [[GNGifImageView alloc] initWithContentSize:size];
     gifImageView.image = image;
     return gifImageView;
