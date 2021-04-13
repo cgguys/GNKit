@@ -12,7 +12,7 @@
 static NSString * const kAppAndDeviceInfo = @"APP与设备信息";
 static NSString * const kSandboxBrowser = @"沙盒文件浏览器";
 static NSString * const kUserDefaultsInfo = @"NSUserDefaults";
-static NSString *const kUIElementDebug = @"UI调试工具";
+static NSString * const kUIElementDebug = @"UI调试工具";
 
 @interface GNDebugTool ()
 @property(nonatomic, strong) GNFloatingWindow *floatingWindow;
@@ -36,7 +36,7 @@ GNSingletonM(GNDebugTool, sharedInstance)
 
 - (void)prepareDataSource {
     self.dataSource = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                       @"GNUIElementsDebugViewController",kUIElementDebug,
+                       kUIElementDebug,@"GNUIElementsDebugViewController",
                        nil];
 }
 
@@ -55,14 +55,15 @@ GNSingletonM(GNDebugTool, sharedInstance)
     }else {
         UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         }];
+        
         __block UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Debug工具" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
         [alertVC addAction:cancleAction];
         
-        [self.dataSource.allValues enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self.dataSource.allKeys enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             Class class = NSClassFromString((NSString *)obj);
             UIViewController *topRootViewController = [GNHelper gn_visibleController];
             if (![topRootViewController isKindOfClass:[class class]]) {
-                    UIAlertAction *action = [UIAlertAction actionWithTitle:kUIElementDebug style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    UIAlertAction *action = [UIAlertAction actionWithTitle:[self.dataSource objectForKey:obj] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         __kindof QMUICommonViewController *vc = [[class alloc] init];
                         QMUINavigationController *nav = [[QMUINavigationController alloc] initWithRootViewController:vc];
                         [[GNHelper gn_visibleController] presentViewController:nav animated:YES completion:nil];
@@ -73,10 +74,8 @@ GNSingletonM(GNDebugTool, sharedInstance)
             }
         }];
         
-        [[GNHelper gn_visibleController] presentViewController:alertVC animated:YES completion:^{
-            self.alertVC = alertVC;
-        }];
-    
+        [[GNHelper gn_visibleController] presentViewController:alertVC animated:YES completion:nil];
+        self.alertVC = alertVC;
     }
 }
 
