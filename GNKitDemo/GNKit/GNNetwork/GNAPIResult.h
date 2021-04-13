@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GNAPIResult : NSObject
 
-@property(nonatomic, copy, readonly) NSString *message;
+@property(nonatomic, copy) NSString *message;
 
 @property(nonatomic, assign) BOOL success;
 

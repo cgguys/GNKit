@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		04072787261D9F690089CC59 /* gifLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04072784261D9F690089CC59 /* gifLoading.gif */; };
 		04072788261D9F690089CC59 /* GNHudTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04072785261D9F690089CC59 /* GNHudTool.m */; };
+		042D248C2623FCE400C2C68D /* GNRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D248B2623FCE400C2C68D /* GNRouter.m */; };
+		042D248F2623FD7800C2C68D /* GNDebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D248E2623FD7800C2C68D /* GNDebugTool.m */; };
+		042D249D26253D8E00C2C68D /* GNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D249C26253D8E00C2C68D /* GNBaseViewController.m */; };
+		042D24A026253E5700C2C68D /* GNUIElementsDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */; };
+		042D24A326253FC500C2C68D /* GNBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24A226253FC500C2C68D /* GNBaseTableViewController.m */; };
+		042D24AA26257CB300C2C68D /* UIViewController+GNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24A926257CB300C2C68D /* UIViewController+GNKit.m */; };
+		042D24AD26257CDC00C2C68D /* GNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24AC26257CDC00C2C68D /* GNHelper.m */; };
+		042D24B0262588DE00C2C68D /* GNFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24AF262588DE00C2C68D /* GNFloatingWindow.m */; };
 		04A5D01B261EF9B2007F7932 /* GNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D01A261EF9B2007F7932 /* GNAPIClient.m */; };
 		04A5D01E261EF9C6007F7932 /* GNAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D01D261EF9C6007F7932 /* GNAPIRequest.m */; };
 		04A5D021261EF9E1007F7932 /* GNAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D020261EF9E1007F7932 /* GNAPIResult.m */; };
@@ -47,6 +55,22 @@
 		04072784261D9F690089CC59 /* gifLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifLoading.gif; sourceTree = "<group>"; };
 		04072785261D9F690089CC59 /* GNHudTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNHudTool.m; sourceTree = "<group>"; };
 		04072786261D9F690089CC59 /* GNHudTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNHudTool.h; sourceTree = "<group>"; };
+		042D248A2623FCE400C2C68D /* GNRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNRouter.h; sourceTree = "<group>"; };
+		042D248B2623FCE400C2C68D /* GNRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNRouter.m; sourceTree = "<group>"; };
+		042D248D2623FD7800C2C68D /* GNDebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNDebugTool.h; sourceTree = "<group>"; };
+		042D248E2623FD7800C2C68D /* GNDebugTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNDebugTool.m; sourceTree = "<group>"; };
+		042D249B26253D8E00C2C68D /* GNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBaseViewController.h; sourceTree = "<group>"; };
+		042D249C26253D8E00C2C68D /* GNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBaseViewController.m; sourceTree = "<group>"; };
+		042D249E26253E5700C2C68D /* GNUIElementsDebugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNUIElementsDebugViewController.h; sourceTree = "<group>"; };
+		042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNUIElementsDebugViewController.m; sourceTree = "<group>"; };
+		042D24A126253FC500C2C68D /* GNBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBaseTableViewController.h; sourceTree = "<group>"; };
+		042D24A226253FC500C2C68D /* GNBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBaseTableViewController.m; sourceTree = "<group>"; };
+		042D24A826257CB300C2C68D /* UIViewController+GNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GNKit.h"; sourceTree = "<group>"; };
+		042D24A926257CB300C2C68D /* UIViewController+GNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GNKit.m"; sourceTree = "<group>"; };
+		042D24AB26257CDC00C2C68D /* GNHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNHelper.h; sourceTree = "<group>"; };
+		042D24AC26257CDC00C2C68D /* GNHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNHelper.m; sourceTree = "<group>"; };
+		042D24AE262588DE00C2C68D /* GNFloatingWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNFloatingWindow.h; sourceTree = "<group>"; };
+		042D24AF262588DE00C2C68D /* GNFloatingWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNFloatingWindow.m; sourceTree = "<group>"; };
 		045361F1261DB64800058D6D /* GNCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNCore.h; sourceTree = "<group>"; };
 		045361F2261E980600058D6D /* GNKitDemoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNKitDemoPrefixHeader.pch; sourceTree = "<group>"; };
 		04A5D019261EF9B2007F7932 /* GNAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNAPIClient.h; sourceTree = "<group>"; };
@@ -110,11 +134,27 @@
 		04072783261D9F690089CC59 /* GNUtils */ = {
 			isa = PBXGroup;
 			children = (
-				04072784261D9F690089CC59 /* gifLoading.gif */,
 				04072786261D9F690089CC59 /* GNHudTool.h */,
 				04072785261D9F690089CC59 /* GNHudTool.m */,
 			);
 			path = GNUtils;
+			sourceTree = "<group>";
+		};
+		042D24902624363700C2C68D /* GNUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				042D24AE262588DE00C2C68D /* GNFloatingWindow.h */,
+				042D24AF262588DE00C2C68D /* GNFloatingWindow.m */,
+			);
+			path = GNUIComponents;
+			sourceTree = "<group>";
+		};
+		042D249426252EE900C2C68D /* ImageResource */ = {
+			isa = PBXGroup;
+			children = (
+				04072784261D9F690089CC59 /* gifLoading.gif */,
+			);
+			path = ImageResource;
 			sourceTree = "<group>";
 		};
 		045362F3261EE75D00058D6D /* GNNetwork */ = {
@@ -133,6 +173,8 @@
 		045362F4261EE77600058D6D /* GNRouter */ = {
 			isa = PBXGroup;
 			children = (
+				042D248A2623FCE400C2C68D /* GNRouter.h */,
+				042D248B2623FCE400C2C68D /* GNRouter.m */,
 			);
 			path = GNRouter;
 			sourceTree = "<group>";
@@ -140,6 +182,10 @@
 		045362F6261EE7EC00058D6D /* GNDebugTools */ = {
 			isa = PBXGroup;
 			children = (
+				042D248D2623FD7800C2C68D /* GNDebugTool.h */,
+				042D248E2623FD7800C2C68D /* GNDebugTool.m */,
+				042D249E26253E5700C2C68D /* GNUIElementsDebugViewController.h */,
+				042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */,
 			);
 			path = GNDebugTools;
 			sourceTree = "<group>";
@@ -147,6 +193,10 @@
 		045362F7261EEC7800058D6D /* GNMainFrame */ = {
 			isa = PBXGroup;
 			children = (
+				042D249B26253D8E00C2C68D /* GNBaseViewController.h */,
+				042D249C26253D8E00C2C68D /* GNBaseViewController.m */,
+				042D24A126253FC500C2C68D /* GNBaseTableViewController.h */,
+				042D24A226253FC500C2C68D /* GNBaseTableViewController.m */,
 			);
 			path = GNMainFrame;
 			sourceTree = "<group>";
@@ -214,11 +264,13 @@
 			children = (
 				04072782261D9F690089CC59 /* GNKit.h */,
 				18D1340B260C844B0083C25B /* GNCore */,
+				042D24902624363700C2C68D /* GNUIComponents */,
 				045362F7261EEC7800058D6D /* GNMainFrame */,
 				045362F4261EE77600058D6D /* GNRouter */,
 				045362F3261EE75D00058D6D /* GNNetwork */,
 				04072783261D9F690089CC59 /* GNUtils */,
 				045362F6261EE7EC00058D6D /* GNDebugTools */,
+				042D249426252EE900C2C68D /* ImageResource */,
 			);
 			path = GNKit;
 			sourceTree = "<group>";
@@ -228,10 +280,14 @@
 			children = (
 				045361F1261DB64800058D6D /* GNCore.h */,
 				1808338626117220007CA64B /* GNMacro.h */,
+				042D24AB26257CDC00C2C68D /* GNHelper.h */,
+				042D24AC26257CDC00C2C68D /* GNHelper.m */,
 				04B5D47026200BEC00B4EF73 /* UIImage+GNKit.h */,
 				04B5D47126200BEC00B4EF73 /* UIImage+GNKit.m */,
 				18D1340C260C84810083C25B /* NSTimer+WeakTimer.h */,
 				18D1340D260C84810083C25B /* NSTimer+WeakTimer.m */,
+				042D24A826257CB300C2C68D /* UIViewController+GNKit.h */,
+				042D24A926257CB300C2C68D /* UIViewController+GNKit.m */,
 			);
 			path = GNCore;
 			sourceTree = "<group>";
@@ -452,9 +508,17 @@
 				04A5D01E261EF9C6007F7932 /* GNAPIRequest.m in Sources */,
 				04072788261D9F690089CC59 /* GNHudTool.m in Sources */,
 				04A5D01B261EF9B2007F7932 /* GNAPIClient.m in Sources */,
+				042D24A326253FC500C2C68D /* GNBaseTableViewController.m in Sources */,
+				042D249D26253D8E00C2C68D /* GNBaseViewController.m in Sources */,
+				042D24B0262588DE00C2C68D /* GNFloatingWindow.m in Sources */,
+				042D24AA26257CB300C2C68D /* UIViewController+GNKit.m in Sources */,
 				04A5D021261EF9E1007F7932 /* GNAPIResult.m in Sources */,
+				042D24A026253E5700C2C68D /* GNUIElementsDebugViewController.m in Sources */,
+				042D248F2623FD7800C2C68D /* GNDebugTool.m in Sources */,
 				18D133DA260C70CD0083C25B /* AppDelegate.m in Sources */,
+				042D24AD26257CDC00C2C68D /* GNHelper.m in Sources */,
 				04B5D47226200BEC00B4EF73 /* UIImage+GNKit.m in Sources */,
+				042D248C2623FCE400C2C68D /* GNRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

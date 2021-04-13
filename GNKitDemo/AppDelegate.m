@@ -19,10 +19,16 @@
     // Override point for customization after application launch.
     
     ViewController *vc = [[ViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    QMUINavigationController *nav = [[QMUINavigationController alloc] initWithRootViewController:vc];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
+    [self.window makeKeyAndVisible]; 
+    
+    
+#if DEBUG
+    [GNDebugTool sharedInstance];
+#endif
+    
     return YES;
 }
 

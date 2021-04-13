@@ -9,10 +9,15 @@
 #ifndef GNMacro_h
 #define GNMacro_h
 
-//弱引用
-//#define @weakify __weak typeof(self) weakSelf = self;
-
+#define GNWeakSelf __weak __typeof(self)weakSelf = self;
+#define GNStrongSelf __strong __typeof(weakSelf)self = weakSelf;
+#define GNImage(s) [UIImage imageNamed:s]
+#define GNKeyWindow [UIApplication sharedApplication].keyWindow
 #define GNIsString(string) [string isKindOfClass:[NSString class]]
+
+
+#define kScreenBottomSafeArea  UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom
+#define kScreenTopSafeArea  UIApplication.sharedApplication.keyWindow.safeAreaInsets.top
 
 #define GNLog(s)  QMUILog(nil,s)
 #define GNLogInfo(s) QMUILogInfo(nil,s)

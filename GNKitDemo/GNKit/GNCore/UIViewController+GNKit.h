@@ -1,8 +1,8 @@
 //
-//  GNFloatingView.h
+//  UIViewController+GNKit.h
 //  GNKitDemo
 //
-//  Created by trueway on 2021/4/12.
+//  Created by trueway on 2021/4/13.
 //  Copyright © 2021 gunan. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GNFloatingView : UIView
-
+@interface UIViewController (GNKit)
+- (UIViewController *)gn_topVisiableContrller;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,4 +12,5 @@
 #import "GNMacro.h"
 #import "NSTimer+WeakTimer.h"
 #import "UIImage+GNKit.h"
+#import "UIViewController+GNKit.h"
 #endif /* GNCore_h */

@@ -15,18 +15,16 @@
 @end
 @implementation GNHudTool
 
-GNSingletonM(GNHudTool,shareInstance)
+GNSingletonM(GNHudTool,sharedInstance)
 
 //业务层可独立出来
 + (void)showXWGifHudInWindows {
-    GNHudTool *tool = [GNHudTool shareInstance];
+    GNHudTool *tool = [GNHudTool sharedInstance];
     [tool showGifProcessHudViewWithGifName:@"gifLoading" withContentSize:CGSizeMake(100,100) inView:nil animated:YES];
 }
 
-
-
 + (void)hideHudInWindows {
-    GNHudTool *tool = [GNHudTool shareInstance];
+    GNHudTool *tool = [GNHudTool sharedInstance];
     [tool hideHudAnimated:YES];
 }
 
@@ -61,13 +59,6 @@ GNSingletonM(GNHudTool,shareInstance)
 - (instancetype)initWithContentSize:(CGSize)size {
     if (self = [super init]) {
         self.gifContentSize = size;
-    }
-    return self;
-}
-
-- (instancetype)init {
-    if (self = [super init]) {
-        self.gifContentSize = CGSizeMake(100, 100);
     }
     return self;
 }

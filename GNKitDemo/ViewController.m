@@ -27,6 +27,7 @@
     
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
     GNLog(@"全部结束");
+    NSLog(@"%@",UIApplication.sharedApplication.delegate.window);
     
 }
 

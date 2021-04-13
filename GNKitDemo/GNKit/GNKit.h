@@ -9,6 +9,11 @@
 #ifndef GNKit_h
 #define GNKit_h
 #import "GNCore.h"
+#import "GNHelper.h"
 #import "GNHudTool.h"
+#import "GNDebugTool.h"
+#import "GNBaseViewController.h"
+#import "GNBaseTableViewController.h"
 
+#import "GNFloatingWindow.h"
 #endif /* GNKit_h */
