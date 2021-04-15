@@ -7,11 +7,12 @@
 //
 
 #import "GNDebugTool.h"
-#import "GNUIElementsDebugViewController.h"
+#import "GNDebugUIElementsViewController.h"
+#import "GNDebugDeviceInfoViewController.h"
 
 static NSString * const kAppAndDeviceInfo = @"APP与设备信息";
 static NSString * const kSandboxBrowser = @"沙盒文件浏览器";
-static NSString * const kUserDefaultsInfo = @"NSUserDefaults";
+static NSString * const kUserDefaultsInfo = @"NSUserDefaults浏览器";
 static NSString * const kUIElementDebug = @"UI调试工具";
 
 @interface GNDebugTool ()
@@ -36,14 +37,13 @@ GNSingletonM(GNDebugTool, sharedInstance)
 
 - (void)prepareDataSource {
     self.dataSource = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                       kUIElementDebug,@"GNUIElementsDebugViewController",
+                       kAppAndDeviceInfo,@"GNDebugDeviceInfoViewController",
+                       kUIElementDebug,@"GNDebugUIElementsViewController",
                        nil];
 }
 
 - (void)configDebugEntrance {
-    GNWeakSelf
     self.floatingWindow = [GNFloatingWindow showSuperManWithpaunchBcak:^{
-        GNStrongSelf
         [self showMenuList];
     }];
     self.floatingWindow.hidden = NO;
@@ -56,7 +56,7 @@ GNSingletonM(GNDebugTool, sharedInstance)
         UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         }];
         
-        __block UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Debug工具" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+        __block UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Debug工具" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         [alertVC addAction:cancleAction];
         
         [self.dataSource.allKeys enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

@@ -29,6 +29,9 @@
     GNLog(@"全部结束");
     NSLog(@"%@",UIApplication.sharedApplication.delegate.window);
     
+    
+    UIButton *btn = ButtonWithElementsAndClickAction(@"aaa", nil, nil, nil);
+    
 }
 
 

@@ -12,6 +12,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/AppDelegate.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -28,6 +29,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/GNKit/GNUIComponents/GNFloatingButton.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -44,6 +46,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/GNKit/GNUIComponents/GNFloatingView.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -60,6 +63,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/GNKit/GNUIComponents/GNFloatingView.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -76,27 +80,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/GNKit/GNDebugTools/GNUIElementsDebugViewController.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "-initTableView"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "867ED204-02DC-425C-BEEC-71312FAC536B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GNKitDemo/GNKit/GNUIComponents/GNFloatingWindow.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-initWithFrame:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -108,6 +97,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GNKitDemo/GNKit/GNMainFrame/GNBaseViewController.m"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"

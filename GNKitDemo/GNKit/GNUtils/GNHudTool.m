@@ -17,7 +17,6 @@
 
 GNSingletonM(GNHudTool,sharedInstance)
 
-//业务层可独立出来
 + (void)showXWGifHudInWindows {
     GNHudTool *tool = [GNHudTool sharedInstance];
     [tool showGifProcessHudViewWithGifName:@"gifLoading" withContentSize:CGSizeMake(100,100) inView:nil animated:YES];

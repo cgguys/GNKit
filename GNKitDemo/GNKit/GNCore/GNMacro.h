@@ -11,7 +11,7 @@
 
 #define GNWeakSelf __weak __typeof(self)weakSelf = self;
 #define GNStrongSelf __strong __typeof(weakSelf)self = weakSelf;
-#define GNImage(s) [UIImage imageNamed:s]
+#define GNImage(msg) [UIImage imageNamed:msg]
 #define GNKeyWindow [UIApplication sharedApplication].keyWindow
 #define GNIsString(string) [string isKindOfClass:[NSString class]]
 

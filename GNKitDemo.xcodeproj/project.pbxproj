@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		04072787261D9F690089CC59 /* gifLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04072784261D9F690089CC59 /* gifLoading.gif */; };
 		04072788261D9F690089CC59 /* GNHudTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04072785261D9F690089CC59 /* GNHudTool.m */; };
+		040AA3322626D71B00834362 /* UIButton+GNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AA3312626D71B00834362 /* UIButton+GNKit.m */; };
 		042D248C2623FCE400C2C68D /* GNRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D248B2623FCE400C2C68D /* GNRouter.m */; };
 		042D248F2623FD7800C2C68D /* GNDebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D248E2623FD7800C2C68D /* GNDebugTool.m */; };
 		042D249D26253D8E00C2C68D /* GNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D249C26253D8E00C2C68D /* GNBaseViewController.m */; };
-		042D24A026253E5700C2C68D /* GNUIElementsDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */; };
+		042D24A026253E5700C2C68D /* GNDebugUIElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D249F26253E5700C2C68D /* GNDebugUIElementsViewController.m */; };
 		042D24A326253FC500C2C68D /* GNBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24A226253FC500C2C68D /* GNBaseTableViewController.m */; };
 		042D24AA26257CB300C2C68D /* UIViewController+GNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24A926257CB300C2C68D /* UIViewController+GNKit.m */; };
 		042D24AD26257CDC00C2C68D /* GNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D24AC26257CDC00C2C68D /* GNHelper.m */; };
@@ -21,6 +22,7 @@
 		04A5D01E261EF9C6007F7932 /* GNAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D01D261EF9C6007F7932 /* GNAPIRequest.m */; };
 		04A5D021261EF9E1007F7932 /* GNAPIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D020261EF9E1007F7932 /* GNAPIResult.m */; };
 		04B5D47226200BEC00B4EF73 /* UIImage+GNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5D47126200BEC00B4EF73 /* UIImage+GNKit.m */; };
+		04E81D912627DA78009FF865 /* GNDebugDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E81D902627DA78009FF865 /* GNDebugDeviceInfoViewController.m */; };
 		18D133DA260C70CD0083C25B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D133D9260C70CD0083C25B /* AppDelegate.m */; };
 		18D133DD260C70CD0083C25B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D133DC260C70CD0083C25B /* ViewController.m */; };
 		18D133E0260C70CD0083C25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D133DE260C70CD0083C25B /* Main.storyboard */; };
@@ -55,14 +57,16 @@
 		04072784261D9F690089CC59 /* gifLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifLoading.gif; sourceTree = "<group>"; };
 		04072785261D9F690089CC59 /* GNHudTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNHudTool.m; sourceTree = "<group>"; };
 		04072786261D9F690089CC59 /* GNHudTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNHudTool.h; sourceTree = "<group>"; };
+		040AA3302626D71B00834362 /* UIButton+GNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+GNKit.h"; sourceTree = "<group>"; };
+		040AA3312626D71B00834362 /* UIButton+GNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GNKit.m"; sourceTree = "<group>"; };
 		042D248A2623FCE400C2C68D /* GNRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNRouter.h; sourceTree = "<group>"; };
 		042D248B2623FCE400C2C68D /* GNRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNRouter.m; sourceTree = "<group>"; };
 		042D248D2623FD7800C2C68D /* GNDebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNDebugTool.h; sourceTree = "<group>"; };
 		042D248E2623FD7800C2C68D /* GNDebugTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNDebugTool.m; sourceTree = "<group>"; };
 		042D249B26253D8E00C2C68D /* GNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBaseViewController.h; sourceTree = "<group>"; };
 		042D249C26253D8E00C2C68D /* GNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBaseViewController.m; sourceTree = "<group>"; };
-		042D249E26253E5700C2C68D /* GNUIElementsDebugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNUIElementsDebugViewController.h; sourceTree = "<group>"; };
-		042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNUIElementsDebugViewController.m; sourceTree = "<group>"; };
+		042D249E26253E5700C2C68D /* GNDebugUIElementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNDebugUIElementsViewController.h; sourceTree = "<group>"; };
+		042D249F26253E5700C2C68D /* GNDebugUIElementsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNDebugUIElementsViewController.m; sourceTree = "<group>"; };
 		042D24A126253FC500C2C68D /* GNBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBaseTableViewController.h; sourceTree = "<group>"; };
 		042D24A226253FC500C2C68D /* GNBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBaseTableViewController.m; sourceTree = "<group>"; };
 		042D24A826257CB300C2C68D /* UIViewController+GNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GNKit.h"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		04A5D020261EF9E1007F7932 /* GNAPIResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAPIResult.m; sourceTree = "<group>"; };
 		04B5D47026200BEC00B4EF73 /* UIImage+GNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GNKit.h"; sourceTree = "<group>"; };
 		04B5D47126200BEC00B4EF73 /* UIImage+GNKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GNKit.m"; sourceTree = "<group>"; };
+		04E81D8F2627DA78009FF865 /* GNDebugDeviceInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNDebugDeviceInfoViewController.h; sourceTree = "<group>"; };
+		04E81D902627DA78009FF865 /* GNDebugDeviceInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNDebugDeviceInfoViewController.m; sourceTree = "<group>"; };
 		1808338626117220007CA64B /* GNMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNMacro.h; sourceTree = "<group>"; };
 		18D133D5260C70CD0083C25B /* GNKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D133D8260C70CD0083C25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,8 +190,10 @@
 			children = (
 				042D248D2623FD7800C2C68D /* GNDebugTool.h */,
 				042D248E2623FD7800C2C68D /* GNDebugTool.m */,
-				042D249E26253E5700C2C68D /* GNUIElementsDebugViewController.h */,
-				042D249F26253E5700C2C68D /* GNUIElementsDebugViewController.m */,
+				042D249E26253E5700C2C68D /* GNDebugUIElementsViewController.h */,
+				042D249F26253E5700C2C68D /* GNDebugUIElementsViewController.m */,
+				04E81D8F2627DA78009FF865 /* GNDebugDeviceInfoViewController.h */,
+				04E81D902627DA78009FF865 /* GNDebugDeviceInfoViewController.m */,
 			);
 			path = GNDebugTools;
 			sourceTree = "<group>";
@@ -288,6 +296,8 @@
 				18D1340D260C84810083C25B /* NSTimer+WeakTimer.m */,
 				042D24A826257CB300C2C68D /* UIViewController+GNKit.h */,
 				042D24A926257CB300C2C68D /* UIViewController+GNKit.m */,
+				040AA3302626D71B00834362 /* UIButton+GNKit.h */,
+				040AA3312626D71B00834362 /* UIButton+GNKit.m */,
 			);
 			path = GNCore;
 			sourceTree = "<group>";
@@ -505,6 +515,8 @@
 				18D1340E260C84810083C25B /* NSTimer+WeakTimer.m in Sources */,
 				18D133DD260C70CD0083C25B /* ViewController.m in Sources */,
 				18D133E8260C70CE0083C25B /* main.m in Sources */,
+				040AA3322626D71B00834362 /* UIButton+GNKit.m in Sources */,
+				04E81D912627DA78009FF865 /* GNDebugDeviceInfoViewController.m in Sources */,
 				04A5D01E261EF9C6007F7932 /* GNAPIRequest.m in Sources */,
 				04072788261D9F690089CC59 /* GNHudTool.m in Sources */,
 				04A5D01B261EF9B2007F7932 /* GNAPIClient.m in Sources */,
@@ -513,7 +525,7 @@
 				042D24B0262588DE00C2C68D /* GNFloatingWindow.m in Sources */,
 				042D24AA26257CB300C2C68D /* UIViewController+GNKit.m in Sources */,
 				04A5D021261EF9E1007F7932 /* GNAPIResult.m in Sources */,
-				042D24A026253E5700C2C68D /* GNUIElementsDebugViewController.m in Sources */,
+				042D24A026253E5700C2C68D /* GNDebugUIElementsViewController.m in Sources */,
 				042D248F2623FD7800C2C68D /* GNDebugTool.m in Sources */,
 				18D133DA260C70CD0083C25B /* AppDelegate.m in Sources */,
 				042D24AD26257CDC00C2C68D /* GNHelper.m in Sources */,

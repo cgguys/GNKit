@@ -110,5 +110,6 @@
     _dragingImage = dragingImage;
     if (_dragingImage) {
         [self.floatingButton setImage:_dragingImage forState:UIControlStateNormal];
-    }}
+    }
+}
 @end

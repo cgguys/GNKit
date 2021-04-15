@@ -6,22 +6,17 @@
 //  Copyright © 2021 gunan. All rights reserved.
 //
 
-#import "GNUIElementsDebugViewController.h"
+#import "GNDebugUIElementsViewController.h"
 
 static NSString * const kUIElement = @"UI元素信息";
 static NSString * const k3DChecker = @"3D UI界面调试";
 static NSString * const kLookInExport = @"导出 Lookin 文件";
 
-@interface GNUIElementsDebugViewController ()
+@interface GNDebugUIElementsViewController ()
 
 @end
 
-@implementation GNUIElementsDebugViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-}
+@implementation GNDebugUIElementsViewController
 
 - (void)initTableView {
     [super initTableView];
